@@ -1,0 +1,22 @@
+.some-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.some-text1 {}
+
+.some-text2 {
+  text-align: center;
+}
+
+.some-text3 {
+  word-spacing: 30px;
+}
+
+.some-text4 {
+  letter-spacing: 5px;
+
+}
