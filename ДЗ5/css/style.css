@@ -1,5 +1,5 @@
 body {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 * {
@@ -11,17 +11,16 @@ body {
   height: 600px;
   border-radius: 40px 0 0 40px;
   overflow: hidden auto;
-  padding: 3px;
   margin: 3px;
   border: 2px solid #000;
 }
 
 .block {
   background: #c5ab8d;
-  padding: 15px;
-  margin: 20px;
-  width: 250px;
-  height: 200px;
+  padding: 25px;
+  margin: 10px;
+  width: 350px;
+  height: 300px;
   display: inline-block;
   border-radius: 40px;
   box-shadow: inset 0px 0px 20px 1px #000;
