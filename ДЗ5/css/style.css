@@ -1,5 +1,5 @@
 body {
-  font-size: 30px;
+  font-size: 15px;
 }
 
 * {
@@ -8,20 +8,20 @@ body {
 
 .block1 {
   background: #bebbbb;
-  height: 1100px;
+  height: 600px;
   border-radius: 40px 0 0 40px;
   overflow: hidden auto;
   padding: 3px;
   margin: 3px;
-  border: 5px groove #000;
+  border: 2px solid #000;
 }
 
 .block {
   background: #c5ab8d;
-  padding: 50px;
+  padding: 15px;
   margin: 20px;
-  width: 450px;
-  height: 400px;
+  width: 250px;
+  height: 200px;
   display: inline-block;
   border-radius: 40px;
   box-shadow: inset 0px 0px 20px 1px #000;
