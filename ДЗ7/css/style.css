@@ -1,0 +1,39 @@
+body {
+    background: #000000dc;
+    color: #fff;
+    font-size: 40px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    height: 100%;
+}
+
+.rabota {
+    display: flex;
+    height: 100%;
+
+
+}
+
+.rabota-block {
+    height: 100px;
+    width: 50%;
+    border-radius: 10px;
+    background: #fff;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    z-index: -1;
+}
+
+.rabota-krug {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    background: #f70303;
+    position: fixed;
+    bottom: 150px;
+    left: 50%;
+}
