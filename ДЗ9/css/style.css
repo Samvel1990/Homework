@@ -1,0 +1,38 @@
+body {
+    background: #363636;
+    font-size: 40px;
+    color: #fff;
+}
+
+.block {
+    max-width: 300px;
+    margin-top: 10px;
+    position: relative;
+    left: 40%;
+}
+
+.block::before {
+    content: "";
+    position: absolute;
+    left: -70px;
+    bottom: -5px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #ea2a2a;
+    border-radius: 100px;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.block::after {
+    content: "";
+    position: absolute;
+    right: 65px;
+    bottom: -5px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #556adf;
+    border-radius: 100px;
+    border: 3px solid rgb(255, 255, 255);
+}
