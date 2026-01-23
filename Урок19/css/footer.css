@@ -1,0 +1,52 @@
+.footer {
+    padding: 60px 0 40px;
+    margin-top: auto;
+    background: linear-gradient(90.00deg,
+            rgba(73, 169, 255, 0.2) 0%,
+            rgba(252, 124, 217, 0.2) 100%);
+    text-align: center;
+}
+
+.footer-container {
+    border-bottom: 1px solid #d3cbd9;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.footer-menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-menu a {
+    color: #535755;
+    font-family: Ubuntu;
+    font-style: Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    transition: color 0.2s;
+}
+
+.footer-menu a:hover {
+    color: #3596ed;
+}
+
+.copyright {
+    color: #858e8a;
+       font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 4%;
+    text-align: center;
+}
