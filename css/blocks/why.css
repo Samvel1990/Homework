@@ -1,0 +1,61 @@
+.why {
+    margin-bottom: 180px;
+}
+@media (width<=992px) {
+    .why {
+    margin-bottom: 80px;
+}
+}
+
+.why__wrapper {
+    display: flex;
+    gap: 135px;
+}
+
+@media (width<=992px) {
+    .why__wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 0 0 0 32px;
+    }
+}
+
+.who_we_are-text {
+    color: var(--gray800);
+    margin-bottom: 8px;
+}
+
+.who_we_are-title {
+    margin-bottom: 40px;
+}
+
+.who_we_are-list {
+    margin-bottom: 48px;
+}
+
+.who_we_are-item {
+    position: relative;
+
+}
+
+.who_we_are-item::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/why/check.svg");
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    left: -32px;
+    top: 6px;
+}
+
+.who_we_are-link {
+    width: 161px;
+    height: 44px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0.5px;
+}
