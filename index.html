@@ -1,175 +1,1059 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Домашняя работа</title>
-    <link rel="shortcut icon" href="src/logo.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Rubik:wght@500&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" href="src/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="shortcut icon" href="./icons/logo.png" type="image/x-icon" />
+  <title>CREATEX</title>
+  <script src="./js/index.js" type="module"></script>
 </head>
-<body id="body">
-<div class="overlay" id="overlay"></div>
-<div class="layout">
-    <div class="burger" id="burger">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-            <g id="SVGRepo_iconCarrier">
-                <path d="M4 18L20 18" stroke="#DAF765" stroke-width="2" stroke-linecap="round"></path>
-                <path d="M4 12L20 12" stroke="#DAF765" stroke-width="2" stroke-linecap="round"></path>
-                <path d="M4 6L20 6" stroke="#DAF765" stroke-width="2" stroke-linecap="round"></path>
-            </g>
-        </svg>
-    </div>
-    <aside class="sidebar" id="sidebar">
-        <div class="sidebar__inner">
-            <div class="logo">
-                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_513_74730)">
-                        <path d="M46.17 -0.257004H3.83C1.57281 -0.257004 -0.257 1.57281 -0.257 3.83V46.17C-0.257 48.4272 1.57281 50.257 3.83 50.257H46.17C48.4272 50.257 50.257 48.4272 50.257 46.17V3.83C50.257 1.57281 48.4272 -0.257004 46.17 -0.257004Z"
-                              fill="#DAF765"/>
-                        <path d="M24.375 38.4H42.461L27.441 3.1585H20.4355C20.4355 3.1585 6.7895 35.881 1.1945 49.294C2.015 50.0275 3.0945 50.257 3.6945 50.257H8.8445L23.954 13.07L32.0465 32.8285H24.375V38.4Z"
-                              fill="#323843"/>
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_513_74730">
-                            <rect width="50" height="50" fill="white"/>
-                        </clipPath>
-                    </defs>
+
+<body class="page__body">
+  <header class="header">
+    <section class="header__section-menu">
+      <div class="container header__container">
+        <div class="header__container-menu">
+          <a class="logo header__logo" href="#">
+            <img class="logo__img" src="./icons/logo.svg" width="130" height="22 " alt="Логотип createx" />
+          </a>
+          <nav class="menu header__menu" id="header__menu" aria-label="Главное меню">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#" lang="en">About Us</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Courses</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Events</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="# ">Blog</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="# ">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__controls">
+          <a class="header__controls-link link-highlight" href="#">
+            Get consultation
+          </a>
+          <div class="header__controls-actions">
+            <button class="header__actions-button" title="Профиль" aria-label="Профиль">
+              <svg width="20" height="20">
+                <use class="header__action-icon" href="./icons/Profile.svg">
+                </use>
+              </svg>
+            </button>
+            <div class="header__action-data">
+              <button class="header__actions-button data-button" title="Войти" aria-label="Войти">
+                Log in /
+              </button>
+              <button class="header__actions-button data-button" title="Зарегистрироваться"
+                aria-label="Зарегистрироваться">
+                Register
+              </button>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="header__section-home">
+      <div class="container">
+        <div class="home__wrapper">
+          <div class="wrapper__chapter">
+            <div class="wrapper__video">
+              <a href="https://rutube.ru/video/c84d9c54ac27dbf7b7ffbfeaf05af4c2/?r=wd" class="wrapper__video-link"
+                data-fslightbox title="Запустить видео">
+                <img class="wrapper__chapter-video-icon" src="./icons/Polygon.svg" width="16" height="16"
+                  alt="Запустить видео">
+              </a>
+              <p class="button-title">
+                Play showreel
+              </p>
+            </div>
+            <h1 class="wrapper__chapter-title">
+              Enjoy studying
+              with <span class="text-capital">Createx Online Courses</span>
+            </h1>
+            <div class="wrapper__chapter-links">
+              <a class="wrapper__chapter-link-about link-highlight " href="#">
+                About us
+              </a>
+              <a class="wrapper__chapter-link-courses link-highlight " href="#">
+                Explore courses
+              </a>
+            </div>
+          </div>
+          <div class="wrapper-picture">
+            <img class="picture-preview" src="./image/illustration.webp" width="602px" height="551"
+              alt="Девушка сидит за компьютерным столом">
+          </div>
+        </div>
+        <div class="home__statistics">
+          <div class="statistics-item">
+            <div class="item-numbers title-av ">
+              1200
+            </div>
+            <div class="item-text text-smoll">
+              Students graduated
+            </div>
+          </div>
+          <svg width="8" height="8">
+            <use class="statistics-item-icon" href="./icons/ellipse.svg">
+            </use>
+          </svg>
+          <div class="statistics-item">
+            <div class="item-numbers title-av ">
+              84
+            </div>
+            <div class="item-text text-smoll">
+              Completed courses
+            </div>
+          </div>
+          <svg width="8" height="8">
+            <use class="statistics-item-icon" href="./icons/ellipse.svg">
+            </use>
+          </svg>
+          <div class="statistics-item">
+            <div class="item-numbers title-av ">
+              16
+            </div>
+            <div class="item-text text-smoll">
+              Qualified tutors
+            </div>
+          </div>
+          <svg width="8" height="8">
+            <use class="statistics-item-icon" href="./icons/ellipse.svg">
+            </use>
+          </svg>
+          <div class="statistics-item">
+            <div class="item-numbers title-av ">
+              5
+            </div>
+            <div class="item-text text-smoll">
+              Years of experience
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main class="basic">
+
+    <section class="why">
+      <div class="container">
+        <div class="why__wrapper">
+          <div class="why__wrapper-img">
+            <img class="" width="705" height="560" src="./image/gerl-with-headphones.webp"
+              alt="Девушка в наушниках за столом работает">
+          </div>
+          <div class="why__wrapper-who_we_are">
+            <h4 class="who_we_are-text text-bold"> Who we are</h4>
+            <h2 class="who_we_are-title title-av "> Why Createx?</h2>
+            <ul class="who_we_are-list">
+              <li class="who_we_are-item">
+                <p class="who_we_are-text text-smoll">A fermentum in morbi pretium aliquam adipiscing donec tempus.</p>
+              </li>
+              <li class="who_we_are-item">
+                <p class="who_we_are-text text-smoll">Vulputate placerat amet pulvinar lorem nisl.</p>
+              </li>
+              <li class="who_we_are-item">
+                <p class="who_we_are-text text-smoll">Consequat feugiat habitant gravida quisque elit bibendum id
+                  adipiscing sed.</p>
+              </li>
+              <li class="who_we_are-item">
+                <p class="who_we_are-text text-smoll">Etiam duis lobortis in fames ultrices commodo nibh.</p>
+              </li>
+              <li class="who_we_are-item">
+                <p class="who_we_are-text text-smoll">Tincidunt sagittis neque sem ac eget.</p>
+              </li>
+              <li class="who_we_are-item">
+                <p class="who_we_are-text text-smoll">Ultricies amet justo et eget quisque purus vulputate dapibus
+                  tortor.</p>
+              </li>
+            </ul>
+            <a class=" who_we_are-link link-highlight" href="#">
+              More about us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="courses">
+      <div class="container">
+        <div class="courses__hat">
+          <div class="courser__hat-headlines">
+            <div class="headlines__heading">
+              <h4 class="headlines__heading-text text-bold"> Ready to learn?</h4>
+              <h2 class="headlines__heading-title title-av"> Featured Courses</h2>
+            </div>
+            <div class="headlines__view">
+              <a class="headlines__view-link link-highlight" href="#">
+                View all courses
+              </a>
+            </div>
+          </div>
+          <div class="cart">
+            <div class="cart-wrapper">
+              <img class="cart-img" src="./image/cart/Jerome.webp" width="214" height="214"
+                alt="Музчина в очках связал руки в замок">
+              <div class="cart-content">
+                <div class="cart-content-block">
+                  <h5 class="cart-content-badge horsontal-marketing">Marketing</h5>
+                </div>
+                <h3 class="cart-content-title title-md">The Ultimate Google Ads Training Course</h3>
+                <div class="cart-content-last_name">
+                  <p class="cart-content-price"> $100 </p>
+                  <p class="cart-content-speaker">| by Jerome Bell</p>
+                </div>
+              </div>
+            </div>
+            <div class="cart-wrapper">
+              <img class="cart-img" src="./image/cart/Marvin.webp" width="214" height="214" alt="Мужчина с бородой">
+              <div class="cart-content">
+                <div class="cart-content-block">
+                  <h5 class="cart-content-badge horsontal-management">Management</h5>
+                </div>
+                <h3 class="cart-content-title title-md">Prduct Management Fundamentals</h3>
+                <div class="cart-content-last_name">
+                  <p class="cart-content-price"> $480 </p>
+                  <p class="cart-content-speaker">| by Marvin McKinney</p>
+                </div>
+              </div>
+            </div>
+            <div class="cart-wrapper">
+              <img class="img-horisontal" src="./image/cart/Leslie.webp" width="214" height="214"
+                alt="Мужчина скрестил руки перед собой">
+              <div class="cart-content">
+                <div class="cart-content-block">
+                  <h5 class="cart-content-badge horsontal-hr_recruting">HR & Recruting</h5>
+                </div>
+                <h3 class="cart-content-title title-md">HR Management and Analytics</h3>
+                <div class="cart-content-last_name">
+                  <p class="cart-content-price"> $200 </p>
+                  <p class="cart-content-speaker">| by Leslie Alexander Li</p>
+                </div>
+              </div>
+            </div>
+            <div class="cart-wrapper">
+              <img class="img-horisontal" src="./image/cart/Kristin.webp" width="214" height="214"
+                alt="Девушка в очках приложила руку к мочке уха">
+              <div class="cart-content">
+                <div class="cart-content-block">
+                  <h5 class="cart-content-badge horsontal-marketing">Marketing</h5>
+                </div>
+                <h3 class="cart-content-title title-md">Brand Management & PR Communications</h3>
+                <div class="cart-content-last_name">
+                  <p class="cart-content-price"> $530 </p>
+                  <p class="cart-content-speaker">| by Kristin Watson</p>
+                </div>
+              </div>
+            </div>
+            <div class="cart-wrapper">
+              <img class="img-horisontal" src="./image/cart/Dianne.webp" width="214" height="214"
+                alt="Девушка скрестила руки перед собой">
+              <div class="cart-content">
+                <div class="cart-content-block">
+                  <h5 class="cart-content-badge horsontal-management">Management</h5>
+                </div>
+                <h3 class="cart-content-title title-md">Business Development Management</h3>
+                <div class="cart-content-last_name">
+                  <p class="cart-content-price"> $400 </p>
+                  <p class="cart-content-speaker">| by Dianne Russell</p>
+                </div>
+              </div>
+            </div>
+            <div class="cart-wrapper">
+              <img class="img-horisontal" src="./image/cart/Guy.webp" width="214" height="214"
+                alt="Мужчина скрестил руки перед собой">
+              <div class="cart-content">
+                <div class="cart-content-block">
+                  <h5 class="cart-content-badge horsontal-design">Design</h5>
+                </div>
+                <h3 class="cart-content-title title-md">Graphic Design Basic</h3>
+                <div class="cart-content-last_name">
+                  <p class="cart-content-price"> $500 </p>
+                  <p class="cart-content-speaker">| by Guy Hawkins</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="container">
+        <div class="benefits__heading">
+          <h4 class="benefits__heading-text text-bold"> Our benefits</h4>
+          <h2 class="benefits__heading-title title-av"> That’s how we do it</h2>
+        </div>
+        <div class="benefits__tabs">
+          <ul class="benefits__tabs-item">
+            <li class="benefits__tabs-list">
+              <a class="benefits__tabs-link  " href="#">
+                <svg class="benefits__tabs-icon" width="16" height="16">
+                  <use href="./icons/benefits/Star.svg">
+                  </use>
                 </svg>
-            </div>
-            <div class="sidebar__user">
-                <div class="sidebar__name">Самвел Казарян</div>
-                <div class="sidebar__text">Счастливый студент</div>
-            </div>
-            <div class="sidebar__tabs">
-                <div class="sidebar__item">
-                    <button class="sidebar__button active" id="tasks">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <g clip-path="url(#clip0_704_74543)">
-                                <path d="M17.7083 20H2.29167C1.0275 20 0 18.9725 0 17.7083V2.29167C0 1.0275 1.0275 0 2.29167 0H17.7083C18.9725 0 20 1.0275 20 2.29167V17.7083C20 18.9725 18.9725 20 17.7083 20ZM2.29167 1.25C1.7175 1.25 1.25 1.7175 1.25 2.29167V17.7083C1.25 18.2825 1.7175 18.75 2.29167 18.75H17.7083C18.2825 18.75 18.75 18.2825 18.75 17.7083V2.29167C18.75 1.7175 18.2825 1.25 17.7083 1.25H2.29167Z"
-                                      fill="black"/>
-                                <path d="M6.04167 13.125C5.88167 13.125 5.72167 13.0642 5.6 12.9417L3.1 10.4417C2.85583 10.1975 2.85583 9.80167 3.1 9.5575L5.6 7.0575C5.84417 6.81333 6.24 6.81333 6.48417 7.0575C6.72833 7.30167 6.72833 7.6975 6.48417 7.94167L4.42583 10L6.48417 12.0583C6.72833 12.3025 6.72833 12.6983 6.48417 12.9425C6.36167 13.0642 6.20167 13.125 6.04167 13.125Z"
-                                      fill="black"/>
-                                <path d="M8.95833 14.1667C8.9 14.1667 8.84 14.1583 8.78167 14.1417C8.45083 14.0442 8.26083 13.6967 8.35833 13.3658L10.4417 6.28251C10.5392 5.95084 10.8892 5.76417 11.2175 5.85917C11.5483 5.95667 11.7383 6.30417 11.6408 6.63501L9.5575 13.7183C9.47833 13.9908 9.22833 14.1667 8.95833 14.1667Z"
-                                      fill="black"/>
-                                <path d="M13.9583 13.125C13.7983 13.125 13.6383 13.0642 13.5167 12.9417C13.2725 12.6975 13.2725 12.3017 13.5167 12.0575L15.575 9.99916L13.5167 7.94083C13.2725 7.69666 13.2725 7.30083 13.5167 7.05666C13.7608 6.81249 14.1567 6.81249 14.4008 7.05666L16.9008 9.55666C17.145 9.80083 17.145 10.1967 16.9008 10.4408L14.4008 12.9408C14.2783 13.0642 14.1183 13.125 13.9583 13.125Z"
-                                      fill="black"/>
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_704_74543">
-                                    <rect width="20" height="20" fill="white"/>
-                                </clipPath>
-                            </defs>
-                        </svg>
-                        <span>Домашние задания</span></button>
-                </div>
-                <div class="sidebar__item">
-                    <button class="sidebar__button" id="diplom">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <g clip-path="url(#clip0_704_74553)">
-                                <path d="M23.2628 10.5971C23.7176 10.365 24 9.90375 24 9.39337C24 8.883 23.7176 8.42175 23.2628 8.18962L12.6135 2.75362C12.2291 2.55824 11.7705 2.55787 11.3854 2.75399L0.736875 8.19C0.282375 8.42175 0 8.883 0 9.39337C0 9.90375 0.282375 10.365 0.736875 10.5971L4.89038 12.7177V18.2074C4.89038 19.8154 8.412 21.393 12 21.393C15.5884 21.393 19.1096 19.815 19.1096 18.2074V12.7174L21.4609 11.517V15.8017L20.901 17.2305C20.7409 17.6389 20.7934 18.0994 21.0405 18.4616C21.2876 18.8246 21.6979 19.041 22.1366 19.041C22.5754 19.041 22.9852 18.8246 23.2324 18.462C23.4795 18.099 23.532 17.6385 23.3719 17.2301L22.8124 15.8021V10.827L23.2628 10.5971ZM17.7623 18.1721C17.6198 18.6375 15.3491 20.0419 12 20.0419C8.65088 20.0419 6.38025 18.6375 6.2415 18.2074V12.3037L6.23887 12.3019C6.23812 12.057 6.1065 11.8207 5.87325 11.7019L1.3515 9.39337L12 3.95737L22.6489 9.39337L12 14.8294L5.87325 11.7019C5.54063 11.5331 4.6695 11.6674 4.5 12C4.33012 12.3322 4.55813 12.5479 4.89038 12.7177L11.3857 16.0331C11.5781 16.1314 11.7889 16.1805 12 16.1805C12.2107 16.1805 12.4222 16.1314 12.6146 16.0331L17.7593 13.407L17.7623 18.1721Z"
-                                      fill="black"/>
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_704_74553">
-                                    <rect width="24" height="24" fill="white"/>
-                                </clipPath>
-                            </defs>
-                        </svg>
-                        <span>Дипломный проект</span></button>
-                </div>
-            </div>
+                Experienced Tutors
+              </a>
+            </li>
+            <li class="benefits__tabs-list">
+              <a class="benefits__tabs-link  " href="#">
+                <svg class="benefits__tabs-icon" width="16" height="16">
+                  <use href="./icons/benefits/like.svg">
+                  </use>
+                </svg>
+                Feedback & Support
+              </a>
+            </li>
+            <li class="benefits__tabs-list">
+              <a class="benefits__tabs-link " href="#">
+                <svg class="benefits__tabs-icon" width="16" height="16">
+                  <use href="./icons/benefits/Layouts.svg">
+                  </use>
+                </svg>
+                24/7 Online Library
+              </a>
+            </li>
+            <li class="benefits__tabs-list">
+              <a class="benefits__tabs-link " href="#">
+                <svg class="benefits__tabs-icon" width="16" height="16">
+                  <use href="./icons/benefits/Chat.svg">
+                  </use>
+                </svg>
+                Community
+              </a>
+            </li>
+          </ul>
         </div>
+        <div class="benefits__wrapper">
+          <div class="benefits__wrapper-inner">
+            <h3 class="benefits__wrapper-title">Only practicing tutors</h3>
+            <p class="benefits__wrapper-text text-smoll">
+              Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi mauris cras
+              massa ut dolor quis sociis mollis augue. Nunc, sodales tortor sit diam mi amet massa. Fermentum diam diam
+              sociis vestibulum. Nulla nisl accumsan, id dignissim massa ut amet. Amet enim, nisi tempus vehicula.
+            </p>
+          </div>
+          <div class="benefits__wrapper-img">
+            <img src="./image/illustration-benefist.webp" width="600" height="440"
+              alt="Двое анимированных человек сидят за компьтером">
+          </div>
+        </div>
+      </div>
+    </section>
 
-    </aside>
-    <div class="content">
-        <div class="container">
-            <div class="content__block" id="tasksBlock">
-                <div class="content__title">Домашние задания</div>
-                <ul class="content__list">
-                    <li class="content__list-item">
-                        <a href="ДЗ/index.html">Урок 1</a>
-                    </li>
-                    <li class="content__list-item">
-                        <a href="ДЗ3/index.html">Урок 2</a>
-                    </li>
-                      <li class="content__list-item">
-                        <a href="ДЗ4/index.html">Урок 3</a>
-                    </li>
-                    <li class="content__list-item">
-                        <a href="Урок14/index.html">Урок 4</a>
-                    </li>
-                    <li class="content__list-item">
-                        <a href="ДЗ5/index.html">Урок 5</a>
-                    </li>
-                    <li class="content__list-item">
-                        <a href="ДЗ7/index.html">Урок 6</a>
-                    </li>
-                    <li class="content__list-item">
-                        <a href="ДЗ8/index.html">Урок 7</a>
-                    </li>
-                    <li class="content__list-item">
-                        <a href="ДЗ9/index.html">Урок 8</a>
-                    </li>
-                     <li class="content__list-item">
-                        <a href="ДЗ10/index.html">Урок 9</a>
-                    </li>
-                     <li class="content__list-item">
-                        <a href="Урок19/index.html">Урок 10</a>
-                    </li>
-                     <li class="content__list-item">
-                        <a href="Урок91/index.html">Урок 11</a>
-                    </li>
-                      <li class="content__list-item">
-                        <a href="Урок96/index.html">Урок 12</a>
-                    </li>
-                     <li class="content__list-item">
-                        <a href="Урок98/index.html">Урок 13</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="content__block hidden" id="diplomBlock">
-                <div class="content__title">Дипломный проект</div>
-                <div class="content__list-diplom">
-                    <a href="ПАПКА-С-НОМЕРОМ-УРОКА">Ссылка на ДЗ</a>
+    <section class="events">
+      <div class="container">
+        <div class="events__heading">
+          <h4 class="benefits__heading-text text-bold"> Our Events</h4>
+          <h2 class="benefits__heading-title title-av"> Lectures & workshops</h2>
+        </div>
+        <div class="events__event">
+          <ul class="events__item">
+            <li class="events__list">
+              <div class="events__list-data">
+                <h2 class="list__data-title">05</h2>
+                <div class="list__data-time">
+                  <h3 class="list__data-time-title title-md">August </h3>
+                  <p class="list__data-time-text text-smoll">11:00 – 14:00</p>
                 </div>
-                <div class="content__decor">
-                    <div class="content__decor-text">Давай проверим, чему ты научился!</div>
-                    <div class="content__decor-img">
-                        <img src="src/decor.png" alt="decor">
+              </div>
+              <div class="events__list-info">
+                <h3 class="list-info-title title-md">Formation of the organizational structure of the company in the
+                  face of uncertainty. </h3>
+                <p class="list-info-text text-smoll">Onine master-class</p>
+              </div>
+              <a class="events__list-link link-highlight" href="#">
+                View more
+              </a>
+            </li>
+            <li class="events__list">
+              <div class="events__list-data">
+                <h2 class="list__data-title">24</h2>
+                <div class="list__data-time">
+                  <h3 class="list__data-time-title title-md">July </h3>
+                  <p class="list__data-time-text text-smoll">11:00 – 12:30</p>
+                </div>
+              </div>
+              <div class="events__list-info">
+                <h3 class="list-info-title title-md">Building a customer service department. Best Practices. </h3>
+                <p class="list-info-text text-smoll">Onine lecture</p>
+              </div>
+              <a class="events__list-link link-highlight" href="#">
+                View more
+              </a>
+            </li>
+            <li class="events__list">
+              <div class="events__list-data">
+                <h2 class="list__data-title">16</h2>
+                <div class="list__data-time">
+                  <h3 class="list__data-time-title title-md">July </h3>
+                  <p class="list__data-time-text text-smoll">10:00 – 13:00</p>
+                </div>
+              </div>
+              <div class="events__list-info">
+                <h3 class="list-info-title title-md">How to apply methods of speculative design in practice.
+                  Worldbuilding prototyping.Practices. </h3>
+                <p class="list-info-text text-smoll">Onine workshop</p>
+              </div>
+              <a class="events__list-link link-highlight" href="#">
+                View more
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="events__view-all">
+          <h3 class="events__view-all-title">Do you want more?</h3>
+          <a class="events__view-all-link link-highlight" href="#">
+            Explore all events
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="certificate">
+      <div class="container">
+        <div class="certificate__wrapper">
+          <div class="certificate__wrapper-info">
+            <h4 class="certificate__info-bold text-bold">Createx Certificate</h4>
+            <h2 class="certificate__info-title title-av"> Your expertise will be confirmed</h2>
+            <p class="certificate__info-text text-smoll">
+              We are accredited by international professional organizations and institutes:
+            </p>
+            <div class="certificate__info-logos">
+              <img src="./icons/certificate_logos/logos.svg" alt="">
+            </div>
+          </div>
+
+          <img class="certificate-img" src="./image/certificate-image.webp" alt="Сертификат">
+
+        </div>
+      </div>
+    </section>
+
+    <section class="team">
+      <div class="container">
+        <div class="team__wrapper">
+          <div class="team__wrapper-heading">
+            <div class="team__heading-head">
+              <h4 class="team__heading-bold text-bold">Best tutors are all here</h4>
+              <h2 class="team__heading-title title-av"> Meet our team</h2>
+            </div>
+            <div class="team__heading-button">
+              <button class="heading-button-arrow product__slider-button--prev">
+                <svg class="heading-button-icon" width="24" height="24">
+                  <use href="./icons/team/Left.svg">
+                  </use>
+                </svg>
+              </button>
+              <button class="heading-button-arrow product__slider-button--next">
+                <svg class="heading-button-icon" width="24" height="24">
+                  <use href="./icons/team/Right.svg">
+                  </use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="team__wrapper-idle product__slider" id="product__slider">
+            <div class="team-idle">
+              <div class="team-idle-img">
+                <img class="idle-img" width="245" height="320" src="./image/team/team_diana.webp" alt="">
+                <div class="iddle-socials">
+                  <a class="iddle-socials-link" href="#">
+                    <svg class="iddle-socials-icon" width="20" height="20">
+                      <use href="./icons/team/Facebook.svg"></use>
+                    </svg>
+                  </a>
+                  <a class="iddle-socials-link" href="#">
+                    <svg class="iddle-socials-icon" width="20" height="20">
+                      <use href="./icons/team/Instagram.svg"></use>
+                    </svg>
+                  </a>
+                  <a class="iddle-socials-link" href="#">
+                    <svg class="iddle-socials-icon" width="20" height="20">
+                      <use href="./icons/team/Linked-In.svg"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-idle-name">
+                <h3 class="team-idle-title title-md">Dianne Russell </h3>
+                <p class="team-idle-text text-smoll">Founder and CEO</p>
+              </div>
+            </div>
+            <div class="team-idle">
+              <div class="team-idle-img">
+                <img class="idle-img" width="245" height="320" src="./image/team/jerom_image.webp" alt="">
+                <div class="iddle-socials">
+                  <a class="iddle-socials-link" href="#">
+                    <svg class="iddle-socials-icon" width="20" height="20">
+                      <use href="./icons/team/Facebook.svg"></use>
+                    </svg>
+                  </a>
+                  <a class="iddle-socials-link" href="#">
+                    <svg class="iddle-socials-icon" width="20" height="20">
+                      <use href="./icons/team/Instagram.svg"></use>
+                    </svg>
+                  </a>
+                  <a class="iddle-socials-link" href="#">
+                    <svg class="iddle-socials-icon" width="20" height="20">
+                      <use href="./icons/team/Linked-In.svg"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-idle-name">
+                <h3 class="team-idle-title title-md">Jerome Bell</h3>
+                <p class="team-idle-text text-smoll">Founder and Program Director</p>
+              </div>
+            </div>
+            <div class="team-idle">
+              <div class="team-idle-img">
+                <img class="idle-img" width="245" height="320" src="./image/team/kristin_image.webp" alt="">
+                <div class="iddle-socials">
+                  <a class="iddle-socials-link" href="#">
+                    <svg class="iddle-socials-icon" width="20" height="20">
+                      <use href="./icons/team/Facebook.svg"></use>
+                    </svg>
+                  </a>
+                  <a class="iddle-socials-link" href="#">
+                    <svg class="iddle-socials-icon" width="20" height="20">
+                      <use href="./icons/team/Instagram.svg"></use>
+                    </svg>
+                  </a>
+                  <a class="iddle-socials-link" href="#">
+                    <svg class="iddle-socials-icon" width="20" height="20">
+                      <use href="./icons/team/Linked-In.svg"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-idle-name">
+                <h3 class="team-idle-title title-md">Kristin Watson</h3>
+                <p class="team-idle-text text-smoll">Marketer, Curator of Marketing Course</p>
+              </div>
+            </div>
+            <div class="team-idle">
+              <div class="team-idle-img">
+                <img class="idle-img" width="245" height="320" src="./image/team/marvin_image.webp" alt="">
+                <div class="iddle-socials">
+                  <a class="iddle-socials-link" href="#">
+                    <svg class="iddle-socials-icon" width="20" height="20">
+                      <use href="./icons/team/Facebook.svg"></use>
+                    </svg>
+                  </a>
+                  <a class="iddle-socials-link" href="#">
+                    <svg class="iddle-socials-icon" width="20" height="20">
+                      <use href="./icons/team/Instagram.svg"></use>
+                    </svg>
+                  </a>
+                  <a class="iddle-socials-link" href="#">
+                    <svg class="iddle-socials-icon" width="20" height="20">
+                      <use href="./icons/team/Linked-In.svg"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-idle-name">
+                <h3 class="team-idle-title title-md">Marvin McKinney</h3>
+                <p class="team-idle-text text-smoll">PM, Curator of Management Course</p>
+              </div>
+            </div>
+            <div class="team-idle">
+              <div class="team-idle-img">
+                <img class="idle-img" width="245" height="320" src="./image/team/lesli-image.webp" alt="">
+                <div class="iddle-socials">
+                  <a class="iddle-socials-link" href="#">
+                    <svg class="iddle-socials-icon" width="20" height="20">
+                      <use href="./icons/team/Facebook.svg"></use>
+                    </svg>
+                  </a>
+                  <a class="iddle-socials-link" href="#">
+                    <svg class="iddle-socials-icon" width="20" height="20">
+                      <use href="./icons/team/Instagram.svg"></use>
+                    </svg>
+                  </a>
+                  <a class="iddle-socials-link" href="#">
+                    <svg class="iddle-socials-icon" width="20" height="20">
+                      <use href="./icons/team/Linked-In.svg"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-idle-name">
+                <h3 class="team-idle-title title-md">Leslie Alexander Li</h3>
+                <p class="team-idle-text text-smoll">Curator of HR & Recruting Course</p>
+              </div>
+            </div>
+            <div class="team-idle">
+              <div class="team-idle-img">
+                <img class="idle-img" width="245" height="320" src="./image/team/kathryn-image.webp" alt="">
+                <div class="iddle-socials">
+                  <a class="iddle-socials-link" href="#">
+                    <svg class="iddle-socials-icon" width="20" height="20">
+                      <use href="./icons/team/Facebook.svg"></use>
+                    </svg>
+                  </a>
+                  <a class="iddle-socials-link" href="#">
+                    <svg class="iddle-socials-icon" width="20" height="20">
+                      <use href="./icons/team/Instagram.svg"></use>
+                    </svg>
+                  </a>
+                  <a class="iddle-socials-link" href="#">
+                    <svg class="iddle-socials-icon" width="20" height="20">
+                      <use href="./icons/team/Linked-In.svg"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-idle-name">
+                <h3 class="team-idle-title title-md">Kathryn Murphy</h3>
+                <p class="team-idle-text text-smoll">Analyst and Marketing specialist</p>
+              </div>
+            </div>
+            <div class="team-idle">
+              <div class="team-idle-img">
+                <img class="idle-img" width="245" height="320" src="./image/team/brooklyn-image.webp" alt="">
+                <div class="iddle-socials">
+                  <a class="iddle-socials-link" href="#">
+                    <svg class="iddle-socials-icon" width="20" height="20">
+                      <use href="./icons/team/Facebook.svg"></use>
+                    </svg>
+                  </a>
+                  <a class="iddle-socials-link" href="#">
+                    <svg class="iddle-socials-icon" width="20" height="20">
+                      <use href="./icons/team/Instagram.svg"></use>
+                    </svg>
+                  </a>
+                  <a class="iddle-socials-link" href="#">
+                    <svg class="iddle-socials-icon" width="20" height="20">
+                      <use href="./icons/team/Linked-In.svg"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-idle-name">
+                <h3 class="team-idle-title title-md">Brooklyn Simmons</h3>
+                <p class="team-idle-text text-smoll">Curator of Development Course</p>
+              </div>
+            </div>
+            <div class="team-idle">
+              <div class="team-idle-img">
+                <img class="idle-img" width="245" height="320" src="./image/team/cody-image.webp" alt="">
+                <div class="iddle-socials">
+                  <a class="iddle-socials-link" href="#">
+                    <svg class="iddle-socials-icon" width="20" height="20">
+                      <use href="./icons/team/Facebook.svg"></use>
+                    </svg>
+                  </a>
+                  <a class="iddle-socials-link" href="#">
+                    <svg class="iddle-socials-icon" width="20" height="20">
+                      <use href="./icons/team/Instagram.svg"></use>
+                    </svg>
+                  </a>
+                  <a class="iddle-socials-link" href="#">
+                    <svg class="iddle-socials-icon" width="20" height="20">
+                      <use href="./icons/team/Linked-In.svg"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-idle-name">
+                <h3 class="team-idle-title title-md">Cody Fisher</h3>
+                <p class="team-idle-text text-smoll">UX Designer, Curator of Design Course</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="testimonials__heading">
+          <h4 class="testimonials__heading-bold text-bold">TESTIMONIALS</h4>
+          <h2 class="testimonials__heading-title title-av">What our students say</h2>
+        </div>
+        <div class="testimonials__block">
+          <div class="testimonials-wrapper">
+            <button class="heading-button-arrow testimonial__slider-button--prev">
+              <svg class="heading-button-icon" width="24" height="24">
+                <use href="./icons/team/Left.svg">
+                </use>
+              </svg>
+            </button>
+            <div class="testimonial">
+              <div class="testimonial-wrapper">
+                <div class="testimonial-icon">
+                  <img src="./icons/testimonial/braces.svg" width="28" height="20" alt="">
+                </div>
+                <div class="testimonial__braces">
+                  <p class="testimonial__braces-review">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus
+                    lobortis
+                    fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non.
+                    Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam
+                    integer
+                    in.
+                  </p>
+                  <div class="testimonial__braces-user-profile">
+                    <img class="user-profile-img" src="./image/testimonial/eleanor-image.webp" alt="">
+                    <div class="user__profile-name-position">
+                      <h6 class="name-position-title title-sm">
+                        Eleanor Pena
+                      </h6>
+                      <p class="name-position-text">
+                        Position, Course
+                      </p>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
+            <button class="heading-button-arrow testimonial__slider-button--next">
+              <svg class="heading-button-icon" width="24" height="24">
+                <use href="./icons/team/Right.svg">
+                </use>
+              </svg>
+            </button>
+          </div>
+          <div class="testimonials__dots">
+            <svg class="testimonials__dots-icon" width="30" height="1">
+              <use href="./icons/testimonial/dot.svg">
+              </use>
+            </svg>
+            <svg class="testimonials__dots-icon" width="30" height="1">
+              <use href="./icons/testimonial/dot.svg">
+              </use>
+            </svg>
+            <svg class="testimonials__dots-icon" width="30" height="1">
+              <use href="./icons/testimonial/dot.svg">
+              </use>
+            </svg>
+            <svg class="testimonials__dots-icon" width="30" height="1">
+              <use href="./icons/testimonial/dot.svg">
+              </use>
+            </svg>
+            <svg class="testimonials__dots-icon" width="30" height="1">
+              <use href="./icons/testimonial/dot.svg">
+              </use>
+            </svg>
+          </div>
         </div>
+
+      </div>
+    </section>
+
+    <section class="blogs">
+      <div class="container">
+        <div class="blogs__headlines">
+          <div class="blogs__headlines-heading">
+            <h4 class="blog__headlines-heading-text text-bold"> Our blog</h4>
+            <h2 class="blog__headlines-heading-title title-av"> Latest posts</h2>
+          </div>
+          <div class="blogs__headlines-view">
+            <a class="blog__headlines-view-link link-highlight" href="#">
+              Go to blog
+            </a>
+          </div>
+        </div>
+        <div class="blogs__item">
+          <div class="blog__list">
+            <p class="blog__list-badge">
+              <svg class="blog__list-badge-icon" width="16" height="16">
+                <use href="./icons/blog/mic.svg">
+                </use>
+              </svg> Podcast
+            </p>
+            <img class="blog__list-img" width="390px" height="300" src="./image/blog/image-marketing.webp" alt="">
+            <ul class="blog__list-item">
+              <li class="blog__list-list">Marketing </li>
+              <li class="blog__list-list">|</li>
+              <li class="blog__list-list">
+                <svg class="blog__list-list-icon" width="16" height="16">
+                  <use href="./icons/blog/Calendar.svg">
+                  </use>
+                </svg>
+              </li>
+              <li class="blog__list-list">September 4, 2020 </li>
+              <li class="blog__list-list">|</li>
+              <li class="blog__list-list">
+                <svg class="blog__list-list-icon" width="16" height="16">
+                  <use href="./icons/blog/Clock.svg">
+                  </use>
+                </svg>
+              </li>
+              <li class="blog__list-list">36 min</li>
+            </ul>
+            <h3 class="blog__list-title title-md">What is traffic arbitrage and does it really make money?</h3>
+            <p class="blog__list-text text-smoll">Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis
+              proin dignissim lacus, purus gravida...</p>
+            <div class="blog__list-enter">
+              <a class="blog__list-link title-sm" href="#">
+                Listen
+                <svg class="blog__list-icon" width="24" height="24">
+                  <use href="./icons/blog/Right.svg">
+                  </use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="blog__list">
+            <p class="blog__list-badge">
+              <svg class="blog__list-badge-icon" width="16" height="16">
+                <use href="./icons/blog/Play.svg">
+                </use>
+              </svg> Video
+            </p>
+            <img class="blog__list-img" width="390px" height="300" src="./image/blog/image-management.webp" alt="">
+            <ul class="blog__list-item">
+              <li class="blog__list-list">Management </li>
+              <li class="blog__list-list">|</li>
+              <li class="blog__list-list">
+                <svg class="blog__list-list-icon" width="16" height="16">
+                  <use href="./icons/blog/Calendar.svg">
+                  </use>
+                </svg>
+              </li>
+              <li class="blog__list-list">August 25, 2020 </li>
+              <li class="blog__list-list">|</li>
+              <li class="blog__list-list">
+                <svg class="blog__list-list-icon" width="16" height="16">
+                  <use href="./icons/blog/Clock.svg">
+                  </use>
+                </svg>
+              </li>
+              <li class="blog__list-list">45 min</li>
+            </ul>
+            <h3 class="blog__list-title title-md">What to do and who to talk to if you want to get feedback on the
+              product</h3>
+            <p class="blog__list-text text-smoll">Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac
+              nibh urna urna sagittis faucibus...</p>
+            <div class="blog__list-enter">
+              <a class="blog__list-link title-sm" href="#">
+                Watch
+                <svg class="blog__list-icon" width="24" height="24">
+                  <use href="./icons/blog/Right.svg">
+                  </use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="blog__list">
+            <p class="blog__list-badge">
+              <svg class="blog__list-badge-icon" width="16" height="16">
+                <use href="./icons/blog/Files.svg">
+                </use>
+              </svg> Article
+            </p>
+            <img class="blog__list-img" width="390px" height="300" src="./image/blog/image-design.webp" alt="">
+            <ul class="blog__list-item">
+              <li class="blog__list-list">Design </li>
+              <li class="blog__list-list">|</li>
+              <li class="blog__list-list">
+                <svg class="blog__list-list-icon" width="16" height="16">
+                  <use href="./icons/blog/Calendar.svg">
+                  </use>
+                </svg>
+              </li>
+              <li class="blog__list-list">August 8, 2020 </li>
+            </ul>
+            <h3 class="blog__list-title title-md">Should you choose a creative profession if you are attracted to
+              creativity?</h3>
+            <p class="blog__list-text text-smoll">Curabitur nisl tincidunt eros venenatis vestibulum ac placerat.
+              Tortor, viverra sed vulputate ultrices...</p>
+            <div class="blog__list-enter">
+              <a class="blog__list-link title-sm" href="#">
+                Read
+                <svg class="blog__list-icon" width="24" height="24">
+                  <use href="./icons/blog/Right.svg">
+                  </use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe">
+      <div class="container">
+        <div class="subscribe__headlines">
+          <div class="subscribe__headlines-heading">
+            <h4 class="subscribe_headlines-heading-text text-bold"> Don’t miss anything</h4>
+            <h2 class="subscribe__headlines-heading-title title-av">Subscribe to the Createx School announcements</h2>
+          </div>
+          <div class="subscribe__form">
+            <form id="emailForm" class="emailForm">
+              <div class="form-group">
+                <input class="subscribe__form-input" type="email" id="email" name="email"
+                  placeholder="Your working email" required>
+                <div class="error" id="emailError">Пожалуйста, введите корректный email</div>
+              </div>
+              <button class="subscribe__form-button link-highlight" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__createx">
+          <a class="footer__logo" href="#">
+            <img class="footer__logo-img" src="./icons/footer/logo.svg" width="130" height="22 "
+              alt="Логотип createx" />
+          </a>
+          <p class="footer__createx-text">Createx Online School is a leader in online studying. We have lots of courses
+            and programs from the main market experts. We provide relevant approaches to online learning, internships
+            and employment in the largest companies in the country. </p>
+          <div class="footer__createx-socials">
+            <a class="footer__createx-link" href="#">
+              <svg class="footer__createx-icon" width="24" height="24">
+                <use href="./icons/footer/Facebook.svg"></use>
+              </svg>
+            </a>
+            <a class="footer__createx-link" href="#">
+              <svg class="footer__createx-icon" width="24" height="24">
+                <use href="./icons/footer/Twitter.svg"></use>
+              </svg>
+            </a>
+            <a class="footer__createx-link" href="#">
+              <svg class="footer__createx-icon" width="24" height="24">
+                <use href="./icons/footer/YouTube.svg"></use>
+              </svg>
+            </a>
+            <a class="footer__createx-link" href="#">
+              <svg class="footer__createx-icon" width="24" height="24">
+                <use href="./icons/footer/telegram.svg"></use>
+              </svg>
+            </a>
+            <a class="footer__createx-link" href="#">
+              <svg class="footer__createx-icon" width="24" height="24">
+                <use href="./icons/footer/Instagram.svg"></use>
+              </svg>
+            </a>
+            <a class="footer__createx-link" href="#">
+              <svg class="footer__createx-icon" width="24" height="24">
+                <use href="./icons/footer/Linked-In.svg"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__site-map">
+          <h4 class="footer__site-map_title footer-title"> SITE MAP</h4>
+          <ul class="site-map-list">
+            <li class="site-map-item footer-item">
+              <a class="footer-link" href="#">
+                About Us
+              </a>
+            </li>
+            <li class="site-map-item footer-item">
+              <a class="footer-link" href="#">
+                Courses
+              </a>
+            </li>
+            <li class="site-map-item footer-item">
+              <a class="footer-link" href="#">
+                Events
+              </a>
+            </li>
+            <li class="site-map-item footer-item">
+              <a class="footer-link" href="#">
+                Blog
+              </a>
+            </li>
+            <li class="site-map-item footer-item">
+              <a class="footer-link" href="#">
+                Contacts
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__courses">
+          <h4 class="footer__courses_title footer-title"> COURSES</h4>
+          <ul class="courses-list">
+            <li class="courses-item footer-item ">
+              <a class="footer-link" href="#">
+                Marketing
+              </a>
+            </li>
+            <li class="courses-item footer-item">
+              <a class="footer-link" href="#">
+                Management
+              </a>
+            </li>
+            <li class="courses-item footer-item">
+              <a class="footer-link" href="#">
+                HR & Recruting
+              </a>
+            </li>
+            <li class="courses-item footer-item">
+              <a class="footer-link" href="#">
+                Design
+              </a>
+            </li>
+            <li class="courses-item footer-item">
+              <a class="footer-link" href="#">
+                Development
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h4 class="footer__contact_title footer-title"> CONTACT US</h4>
+          <ul class="contact-list">
+            <li class="contact-item footer-item ">
+              <a class="footer-link" href="tel:+4055550128">
+                <svg class="footer__contact-icon" width="16" height="16">
+                  <use href="./icons/footer/iPhone.svg"></use>
+                </svg>
+                (405) 555-0128
+              </a>
+            </li>
+            <li class="contact-item footer-item">
+              <a class="footer-link" href="mailto:hello@createx.com">
+                <svg class="footer__contact-icon" width="16" height="16">
+                  <use href="./icons/footer/Mail.svg">
+                  </use>
+                </svg>
+                hello@createx.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__sing">
+          <h4 class="footer__sing_title footer-title"> SIGN UP TO OUR NEWSLETTER</h4>
+          <form id="emailForm" class="sing_emailForm">
+            <div class="form-group">
+              <input class="sing-input" type="email" id="email" name="email" placeholder="Email address" required>
+              <div class="error" id="emailError">Пожалуйста, введите корректный email</div>
+              <button class="footer__sing-icon" type="submit">
+                <svg width="16" height="16">
+                  <use href="./icons/footer/Right.svg"></use>
+                </svg>
+              </button>
+            </div>
+            <p class="sing-text">
+              *Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.
+            </p>
+          </form>
+
+        </div>
+      </div>
     </div>
-</div>
-<script src="src/index.js"></script>
+  </footer>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

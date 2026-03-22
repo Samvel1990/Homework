@@ -1,0 +1,149 @@
+.courses {
+    margin-bottom: 180px;
+}
+
+@media (width<=768px) {
+    .courses {
+        margin-bottom: 60px;
+    }
+}
+
+.courser__hat-headlines {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+@media (width<=992px) {
+    .courser__hat-headlines {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+.headlines__heading-text {
+    margin-bottom: 8px;
+}
+
+.headlines__view-link {
+    width: 203px;
+    height: 52px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0.5px;
+}
+
+.cart {
+    display: grid;
+    gap: 30px;
+}
+
+@media (width<=992px) {
+    .cart {
+        grid-template-columns: repeat(1, minmax(375px, 1fr));
+        gap: 15px;
+    }
+}
+
+@media (width>992px) {
+    .cart {
+        grid-template-columns: repeat(2, minmax(375px, 1fr));
+    }
+}
+
+.cart-wrapper {
+    max-width: 600px;
+    height: 214px;
+    display: flex;
+    gap: 32px;
+    border: 1px solid var(--gray300);
+    border-radius: 4px;
+    box-shadow: var(--shadow-disable-glow);
+    background: var(--white);
+}
+
+@media (width<=768px) {
+    .cart-wrapper {
+        gap: 8px;
+    }
+}
+
+
+.cart-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 32px 10px 0 0;
+}
+
+@media (width<=768px) {
+    .cart-content {
+        gap: 5px;
+        padding: 10px 10px 0 0;
+    }
+}
+
+.cart-content-badge {
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: 4px;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.cart-content-title {
+    color: var(--gray900);
+}
+
+.horsontal-marketing {
+    background: var(--success);
+}
+
+.horsontal-management {
+    background: var(--info);
+}
+
+.horsontal-hr_recruting {
+    background: var(--warning);
+}
+
+.horsontal-design {
+    border-radius: 4px;
+    background: var(--design);
+}
+
+.cart-content-last_name {
+    display: flex;
+    gap: 8px;
+}
+
+.cart-content-price {
+    color: var(--danger);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: left;
+}
+
+.cart-content-speaker {
+    color: var(--gray700);
+    font-weight: 400;
+    line-height: 150%;
+}
+
+@media (width>576px) {
+    .cart-content-speaker {
+        font-size: 18px;
+    }
+}
+
+@media (width<=576px) {
+    .cart-content-speaker {
+        font-size: 16px;
+    }
+}
