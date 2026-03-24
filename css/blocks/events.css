@@ -1,4 +1,5 @@
 .events {
+    position: relative;
     background: var(--btn-gradient-opacity);
 }
 
@@ -11,6 +12,34 @@
 @media (width<=992px) {
     .events {
         margin-bottom: 80px;
+    }
+}
+
+@media (width>=922px) {
+    .events::before {
+        content: "";
+        position: absolute;
+        width: 116px;
+        height: 159px;
+        display: block;
+        background-image: url("../../icons/shapes/dots.svg");
+        background-repeat: no-repeat;
+        left: 0px;
+        bottom: 0px;
+
+    }
+
+    .events::after {
+        content: "";
+        position: absolute;
+        width: 284px;
+        height: 284px;
+        display: block;
+        background-image: url("../../icons/shapes/circles.svg");
+        background-repeat: no-repeat;
+
+        right: -50px;
+        top: -150px;
     }
 }
 
